@@ -1,0 +1,6 @@
+Scenario - Dashlane- Major Breach
+You've been hired to come in as a Security Analyst working for Dashlane.
+Dashlane, a password management service, recently discovered a hole in the system, which has resulted in 5.4 million users’s information being stolen and sold online.
+Dashlane is interested in trying some different forms of protection on their system to ensure users' data stays protected. 
+Your CTO is concerned that this stems from a strange email someone received earlier that month. 
+You will be working closely with Jeffery Mariner to complete this project.
