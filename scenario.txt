@@ -1,4 +1,5 @@
 Scenario - Dashlane- Major Breach
+
 You've been hired to come in as a Security Analyst working for Dashlane.
 Dashlane, a password management service, recently discovered a hole in the system, which has resulted in 5.4 million users’s information being stolen and sold online.
 Dashlane is interested in trying some different forms of protection on their system to ensure users' data stays protected. 
@@ -26,7 +27,9 @@ While the sender's name appears as "Joyce S." from a legitimate-sounding domain 
 
 The domain name used in the email ("dashlanedata.com") differs from the expected domain name for the company ("dashlane.com"). Normally, legitimate emails would originate from a domain name matching the company's official website. The mismatch between the domain names in the email and the website suggests potential phishing activity, as it indicates an attempt to deceive recipients by impersonating a known entity."
 
-Suspicious Link: The email contains a hyperlink to a website ("http://dashlanedataanalytics.com/clickme"), which potentially leads to a malicious website (fakeupdate.net) designed to steal credentials or deliver malware. The receiver can verify the authenticity of the link from websites like
+4:-Suspicious Link: 
+
+The email contains a hyperlink to a website ("http://dashlanedataanalytics.com/clickme"), which potentially leads to a malicious website (fakeupdate.net) designed to steal credentials or deliver malware. The receiver can verify the authenticity of the link from websites like
 
 virus total “https://www.virustotal.com/gui/home/url”
 https://securitytrails.com/
@@ -34,64 +37,103 @@ https://urlscan.io/
 https://dnschecker.org/
 host.io
 
-Request for Personal Information: 
+5:- Request for Personal Information: 
 
 While the email does not explicitly request personal information, it does ask the recipient to click on a link and provide expertise on a specific topic. This could be an attempt to gather information about the recipient's knowledge and credentials.
-Generic Language: 
+
+6:- Generic Language: 
+
 The email uses generic language and does not provide specific details about the recipient's expertise or how they were chosen for assistance, which is common in phishing emails sent to a wide audience.
 In summary, the email exhibits several characteristics commonly associated with phishing attempts, including urgency, unsolicited requests, suspicious links, and generic language. Recipients should exercise caution and verify the legitimacy of the email before taking any action, such as clicking on links or providing information. It's advisable to report suspicious emails to the organization's IT security team for further investigation.
-Questions for the employee:-
+
+7:-Questions for the employee:-
+
 If a security analyst needs to investigate an email received by an employer, several questions can help gather relevant information:
 Can you provide some details about your current work setup, such as whether you're working remotely or in person at the office?
 Link Interaction: Did you click on any links or download any attachments from the email?
 
-Forwarding or Sharing: Have you forwarded or shared the email with anyone else?
-System Impact: Have you noticed any unusual activity or changes on your system or network after receiving the email?
-Reporting: Did you report the email to the IT or security team before or after opening it?
-Other Observations: Is there any additional information or observations you can provide about the email or related incidents?
-Awareness Training: Have you received cybersecurity awareness training on identifying and handling suspicious emails?
+a) Forwarding or Sharing: Have you forwarded or shared the email with anyone else?
+b) System Impact: Have you noticed any unusual activity or changes on your system or network after receiving the email?
+c) Reporting: Did you report the email to the IT or security team before or after opening it?
+d) Other Observations: Is there any additional information or observations you can provide about the email or related incidents?
+e) Awareness Training: Have you received cybersecurity awareness training on identifying and handling suspicious emails?
+
 These questions can help the security analyst gather information to assess the potential threat posed by the email and take appropriate action to mitigate any risks.
+
 According to the employee's feedback, he was working in person when he received an email. Upon opening the email and clicking the link, his system exhibited unusual behavior.
-File Hash Analysis:- The VirusTotal analysis indicates that the file lacks a digital signature from a verified source, raising concerns about its trustworthiness and potential security risks. Organizations should exercise caution when dealing with unsigned files and consider additional analysis and response measures to mitigate potential threats.
-42 out of 70 security engines on VirusTotal flag this file hash as malicious. It seems like it has infected employee computer with some malware like trojan. Trojans or viruses often disguise themselves as legitimate files to evade detection and trick users into executing them. They may use various techniques to appear legitimate.
- Trojans often hide malicious code within otherwise legitimate files, such as documents, executables, or multimedia files. This allows them to bypass security controls that rely on file signatures or reputation-based detection.
+
+File Hash Analysis:-
+
+The VirusTotal analysis indicates that the file lacks a digital signature from a verified source, raising concerns about its trustworthiness and potential security risks. Organizations should exercise caution when dealing with unsigned files and consider additional analysis and response measures to mitigate potential threats.
+
+42 out of 70 security engines on VirusTotal flag this file hash as malicious. It seems like it has infected the employee's computer with some malware like trojan. Trojans or viruses often disguise themselves as legitimate files to evade detection and trick users into executing them. 
+They may use various techniques to appear legitimate.
+
 Trojans often hide malicious code within otherwise legitimate files, such as documents, executables, or multimedia files. This allows them to bypass security controls that rely on file signatures or reputation-based detection.
-File hash analysis from virus total shows that file type is win32 DLL.  An adversary could disguise a malicious payload within a DLL file, which could then be executed on a victim's system. 
+
+Trojans often hide malicious code within otherwise legitimate files, such as documents, executables, or multimedia files. This allows them to bypass security controls that rely on file signatures or reputation-based detection.
+
+File hash analysis from the virus total shows that the file type is win32 DLL.  An adversary could disguise a malicious payload within a DLL file, which could then be executed on a victim's system. 
+
 This DLL may contain malicious code or routines designed to perform malicious actions, such as downloading additional malware, stealing data, or providing remote access to the attacker. 
+
 As previously stated, a system vulnerability was recently uncovered, leading to the theft and sale of information from 5.4 million users online. The malware Trojan responsible for the breach appears to function as a data stealer, infiltrating the network and extracting user information from data servers containing usernames and passwords.
+
 Incident Response Plan:-
+
 Incident response plans for cybersecurity incidents, like data breaches from malware such as Trojans, often draw from established frameworks like the NIST Cybersecurity Framework, SANS Incident Handling Steps, or ISO/IEC 27035. While these frameworks offer valuable guidelines and best practices, the specifics of incident response are tailored to the unique business needs and structures of each organization.
 An incident response plan for a phishing email where a person clicks on a malicious link should aim to contain the threat, minimize damage, and restore normal operations as quickly as possible. Here's a basic outline of steps to include in the plan:
+
 Identification: Promptly identify the phishing incident by monitoring email security alerts, user reports, or automated detection systems.
-Email filtering rule can be implemented based on certain parameters. There are certain tools available which can be used by organization.
+Email filtering rules can be implemented based on certain parameters. There are certain tools available that can be used by organizations.
+
 Some examples of automated phishing detection tools include:
-Proofpoint Email Protection
-Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection)
-Cisco Email Security
-Barracuda Email Security Gateway
-Symantec Email Security
+
+-Proofpoint Email Protection
+-Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection)
+-Cisco Email Security
+-Barracuda Email Security Gateway
+-Symantec Email Security
+
 Isolation: Disconnect the compromised system from the network to stop it from communicating with the attacker's infrastructure in the future and to stop malware from spreading.
+
 Analysis: Analyze the malicious link and any associated files or payloads to determine the nature and scope of the threat. Use sandboxing (Cuckoo Sandbox), malware analysis tools(Ghidra), and network traffic analysis(using wireshark) to gather information about the attack.
+
 Containment: Take immediate action to contain the incident by blocking the malicious link or domain at the network perimeter, deploying endpoint security measures to quarantine affected devices (using anti-viruses), and revoking access credentials if necessary.
+
 Communication: Notify relevant stakeholders, including IT security personnel, management, affected users, and legal or compliance teams, about the incident. Provide clear instructions on what actions to take and keep stakeholders informed throughout the incident response process.
+
 Remediation: Remove the phishing email from affected users' inboxes, scan the network for any additional indicators of compromise (IOCs), and deploy security patches or updates to vulnerable systems to prevent future attacks.
 User Education: Conduct security awareness training for employees to educate them about the risks of phishing attacks, how to identify suspicious emails, and best practices for responding to potential threats.
+
 Documentation: Document all actions taken during the incident response process, including timelines, findings, remediation steps, and lessons learned, to facilitate post-incident analysis and improve future response efforts.
+
 Review and Follow-Up: Conduct a post-incident review to assess the effectiveness of the response plan, identify areas for improvement, and update policies, procedures, and training materials accordingly.
+
 Legal and Regulatory Compliance: Ensure compliance with relevant laws, regulations, and industry standards, such as data breach notification requirements, by following established incident response protocols and reporting procedures.
 By following a structured incident response plan, organizations can effectively mitigate the impact of phishing attacks and minimize the risk of data breaches in the future, financial loss, and reputational damage.
-Lessons Learned and Recommendations
- When you encounter your subsequent security breach, keep in mind: IRIDD, or "I rid,"
-Isolate
+
+Lessons Learned and Recommendations: 
+
+When you encounter your subsequent security breach, keep in mind: IRIDD, or "I rid,"
+
+Isolate:-
 The first actions in data breach containment should be to eliminate active attackers and stop additional unauthorized access as soon as you realize there is a problem. Isolating the impacted device, systems, or network is how it is done. If the breach just affects a single device, such as a workstation or server, disconnect the device from the network by pulling the network cable, or disable the wireless connection if it's enabled. Try to terminate any active processes that are running on the impacted system if you can see them.
-Reset passwords
+
+Reset passwords:-
 Promptly reset passwords to mitigate unauthorized access gained through credential guessing, phishing, or brute-force attacks. If the compromised accounts are known, prioritize their reset. However, for comprehensive data breach containment, consider forcing password resets for all domain or authentication system accounts unless the compromise is isolated.
+
 Implement MFA:-
 Implementing Multi-Factor Authentication (MFA) is crucial for preventing repeat compromises. MFA combines two or more authentication types, such as something you know, something you are, or something you have, to enhance security beyond traditional username and password methods.
+
 Do not Destroy Evidence:- 
 During incident response, preserving evidence is essential even amidst the rush to contain the situation. Preserving data intact enables the investigation of potential data breaches, potentially avoiding the need for data breach notifications and associated costs. While immediate changes may be necessary, such as disabling compromised accounts or rules, documenting the changes with photos or screenshots ensures evidence integrity for future investigations.
+
 Do not Panic:-
 Stay calm and composed. Take a moment to breathe deeply, collect your thoughts, and assemble the necessary resources for data breach containment. Panicking can lead to errors and delays in response, resulting in increased costs and recovery challenges.
+
+
+
 References:
 https://sansorg.egnyte.com/dl/6Btqoa63at
 https://www.crowdstrike.com/cybersecurity-101/incident-response/incident-response-steps/
